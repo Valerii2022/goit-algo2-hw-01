@@ -22,13 +22,13 @@ def find_min_max(arr):
 if __name__ == "__main__":
 
     if len(sys.argv) < 2:
-        print("Використання: python script.py число1 число2 ...")
+        print("Використання: python task_1.py число1 число2 ...")
         sys.exit(1)
 
     try:
-        arr = list(map(float, sys.argv[1:]))  
+        arr = list(map(int, sys.argv[1:]))  
     except ValueError:
-        print("Помилка: усі аргументи мають бути числами (цілими або дробовими).")
+        print("Помилка: усі аргументи мають бути числами.")
         sys.exit(1)
 
     print(find_min_max(arr))

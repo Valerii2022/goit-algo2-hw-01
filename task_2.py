@@ -28,14 +28,14 @@ if __name__ == "__main__":
     import sys
     
     if len(sys.argv) < 3:
-        print("Використання: python script.py k число1 число2 ...")
+        print("Використання: python task_2.py k число1 число2 ...")
         sys.exit(1)
     
     try:
         k = int(sys.argv[1])
-        arr = list(map(float, sys.argv[2:]))  
+        arr = list(map(int, sys.argv[2:]))  
     except ValueError:
-        print("Помилка: усі аргументи мають бути числами (цілими або дробовими).")
+        print("Помилка: усі аргументи мають бути числами.")
         sys.exit(1)
 
     print("Мінімум і максимум:", find_min_max(arr))
